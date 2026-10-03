@@ -202,6 +202,11 @@ not complete in 5 second( it is the problem in network).you should use one cli f
 
 40)IF YOU HAVE NOT PUSH SUCCESS IN LAST 5 trial, you should push to github without time limit set in (39) with one trail opportunity in every 5 fail push trial.
 
+41) if user give you LLM/vlm/image or video generation apikey  for external service(local service is not applicable for this rule 41), you should maintain a concept to save user api money.
+41.1) you should test with the cheapest model with same api as aim for the work and target. so ensure pipline is correct.
+41.2) mock and cache api reply and use for unit test. do not sent real api during any cicd pipline.
+41.3) user may provide doc and develop spec that have explicit suggest you use strong model. But you should not use it unless after confirm with user run time ( using prompt box that communication to user if apply to you), but in mean time you should test and implementing with the cheapest nodel that is suitable for the task in term of reply format.
+
 99) IF current repo structure /login method / port usage  do NOT FULL FILL 0-99 structure requirment. DO NOT REFACTCPOR THE CODE and REPO  UNLESS USER ASK YOU TO DO CLEARLY.
  YOU SHOULD FOLLOW THE dev-log and fan-in fan-out but DO NOT COMMIT IT.
 </guide>
